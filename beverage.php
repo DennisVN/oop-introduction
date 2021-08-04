@@ -2,34 +2,31 @@
 class Beverage
 {
     public string $color;
-    //public float $price;
+    public string $price;
     public string $temperature;
-    public array $info;
 
-    public function __construct(string $color, array $info)
+    public function __construct(string $color, string $price, string $temperature)
     {
         $this->color = $color;
-        //$this->price = $price;
-        //$this->temperature = $temperature;
-        $this->info= $info;
+        $this->price = $price;
+        $this->temperature = $temperature;
     }
 
     public function getInfo()
     {
-        $infoAsString = implode(', ', $this->info);
-        echo "Your mojito is {$infoAsString} ";
+        return $this->color;
+        return $this->price;
+        return $this->temperature;
     }
-
-    /*public function showColor()
-    {
-        echo "Your mojito has a {$this->color} color <br>";
-    }*/
-
-    //public function 
 }
 
-class Beer extends Beverage {
-    
-}
+$cola = new beverage("black", "1 euro", "very cool");
+echo "this beverage is ";
+echo $cola->color;
+echo " and costs ";
+echo $cola->price;
+echo " best served ";
+echo $cola->temperature; 
+
 
 ?>
