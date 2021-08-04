@@ -27,4 +27,9 @@ class Beverage
 
     //public function 
 }
+
+class Beer extends Beverage {
+    
+}
+
 ?>
