@@ -17,7 +17,7 @@ class Beverage
     public function getInfo()
     {
         $infoAsString = implode(', ', $this->info);
-        echo "This beverage is {$infoAsString} ";
+        echo "Your mojito is {$infoAsString} ";
     }
 
     /*public function showColor()

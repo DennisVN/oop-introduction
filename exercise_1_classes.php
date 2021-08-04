@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 
 require 'beverage.php';
 
-$mojito = new Beverage('Mojito', ['green', 10 , 'brainfreeze warning']);
+$mojito = new Beverage('Mojito', ['green', 10 . ' €' , 'brainfreeze warning']);
 
 $mojito -> getInfo();
 ?>
