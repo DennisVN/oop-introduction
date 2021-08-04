@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+ini_set('display_errors', value: '1');
+ini_set('display_startup_errors', value: "1");
+error_reporting(error_level: E_ALL);
+
+require 'beverage.php';
+
 /* EXERCISE 1
 Create a class beverage.
 Create the properties color (string), price (float) and temperature (string) and also foresee a construct.
