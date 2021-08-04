@@ -9,8 +9,8 @@ error_reporting(E_ALL);
 require 'beverage.php';
 require 'beer.php';
 
-$mojito = new Beverage('Mojito', ['green', 10 . ' €' , 'brainfreeze warning']);
-$beer = new Beverage('Beer', ['blonde', 5.2 . ' ° Alc.', 'extra zimny']);
+//$mojito = new Beverage('Mojito', ['green', 10 , 'brainfreeze warning']);
+//$beer = new Beverage('Beer', ['blonde', 5.2 , 'extra zimny']);
 
 //$mojito -> getInfo();
 //$beer -> getInfo();
