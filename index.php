@@ -6,12 +6,17 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-require 'beverage.php';
-require 'beer.php';
+require "exercise_1_classes.php";
+require "exercise_2_extending.php";
 
-//$mojito = new Beverage('Mojito', ['green', 10 , 'brainfreeze warning']);
-//$beer = new Beverage('Beer', ['blonde', 5.2 , 'extra zimny']);
+$cola = new Beverages("black", 2);
+$cola->getInfo();
+$cola->temperature;
 
-//$mojito -> getInfo();
-//$beer -> getInfo();
+$duvel = new Beer("blonde", 3.5, "ice cold", "Duvel", 8.5);
+$duvel->getAlcoholPercent();
+echo "{$duvel->getAlcoholpercent()}";
+$duvel->getInfo();
+$duvel->color;
+
 ?>
