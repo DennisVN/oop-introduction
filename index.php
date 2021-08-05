@@ -8,6 +8,7 @@ error_reporting(E_ALL);
 
 require "exercise_1_classes.php";
 require "exercise_2_extending.php";
+require "exercise_3_private.php";
 
 $cola = new Beverages("black", 2);
 $cola->getInfo();
